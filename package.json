@@ -1,7 +1,7 @@
 {
   "name": "express-mongo-auth",
   "version": "1.0.0",
-  "description": "",
+  "description": "```bash npm install          # instala también ejs cp .env.example .env # y ajusta MONGODB_URI / JWT_SECRET npm run dev          # o npm start  ->  http://localhost:3000 ```",
   "type": "module",
   "main": "src/server.js",
   "scripts": {
@@ -22,5 +22,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chanok18/lab07_web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chanok18/lab07_web/issues"
+  },
+  "homepage": "https://github.com/Chanok18/lab07_web#readme"
 }
