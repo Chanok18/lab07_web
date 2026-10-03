@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<h4>Bienvenido, <span id="welcome-name"></span></h4>
+<p class="grey-text">Aquí están tus datos.</p>
+<div class="card">
+    <div class="card-content" id="user-data"><div class="progress"><div class="indeterminate"></div></div></div>
+    <div class="card-action">
+        <a href="/profile">Editar mi cuenta</a>
+        <a href="/admin/dashboard" id="admin-link" style="display:none">Ir al panel de administración</a>
+    </div>
+</div>
+<%- include('partials/footer', { script: 'dashboard' }) %>

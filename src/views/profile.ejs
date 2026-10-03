@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+<h4>Mi cuenta</h4>
+<div class="row">
+    <div class="col s12 m4 center-align">
+        <img id="avatar" class="avatar" alt="Foto de perfil" src="https://via.placeholder.com/120?text=Perfil">
+        <h6 id="full-name"></h6>
+        <div id="roles"></div>
+        <p class="grey-text">Edad: <b id="age"></b> años<br>Registrado: <span id="created"></span></p>
+    </div>
+    <div class="col s12 m8">
+        <form id="profile-form" class="card card-content" novalidate>
+            <div class="input-field"><input id="email" type="email" disabled><label for="email" class="active">Email (no editable)</label></div>
+            <div class="input-field"><input id="name" type="text" required><label for="name" class="active">Nombre</label></div>
+            <div class="input-field"><input id="lastName" type="text" required><label for="lastName" class="active">Apellido</label></div>
+            <div class="input-field"><input id="phoneNumber" type="tel" required><label for="phoneNumber" class="active">Teléfono</label></div>
+            <div class="input-field"><input id="birthdate" type="date" required><label for="birthdate" class="active">Fecha de nacimiento</label></div>
+            <div class="input-field"><input id="address" type="text"><label for="address" class="active">Dirección</label></div>
+            <div class="input-field"><input id="url_profile" type="url"><label for="url_profile" class="active">URL de foto de perfil</label></div>
+            <button id="save-btn" class="btn indigo darken-3 waves-effect" type="submit">Guardar cambios</button>
+        </form>
+    </div>
+</div>
+<%- include('partials/footer', { script: 'profile' }) %>

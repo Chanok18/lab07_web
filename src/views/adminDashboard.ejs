@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<h4>Panel de administración</h4>
+<p class="grey-text">Usuarios registrados: <b id="total">0</b></p>
+<div class="card">
+    <div class="card-content" style="overflow-x:auto">
+        <table class="striped highlight">
+            <thead>
+                <tr>
+                    <th>#</th><th>Nombre</th><th>Email</th><th>Teléfono</th>
+                    <th>Edad</th><th>Roles</th><th>Fecha de registro</th><th></th>
+                </tr>
+            </thead>
+            <tbody id="users-body"><tr><td colspan="8">Cargando...</td></tr></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="user-modal" class="modal">
+    <div class="modal-content">
+        <h5>Información del usuario</h5>
+        <div id="modal-body"></div>
+    </div>
+    <div class="modal-footer"><a href="#!" class="modal-close btn-flat">Cerrar</a></div>
+</div>
+<%- include('partials/footer', { script: 'adminDashboard' }) %>
